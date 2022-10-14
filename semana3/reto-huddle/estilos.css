@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@600&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+.wraper{
+    margin: auto;
+    width: 960px ;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 14px;
+    color: rgb(164 167 170);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+
+.btn-free{
+    background-color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 30px;
+    box-shadow: 2px 3px 2px 0.5px ;
+
+
+}   
+
+
+
+/* SECTION 1 */
+
+.section1{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./src/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-letters{
+    padding: 10px;
+    text-align: center;
+}
+
+.title{
+    font-size: 4em;
+}
+
+.text-normal{
+    width: 100%;
+    padding-top: 40px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-pink{
+        background-color: rgb(255 85 204);
+        border: solid 1px rgb(255 85 204);
+        border-radius: 2em;
+        color: white;
+        padding: 10px 1em;
+        width: 200px;
+
+}
+
+.img-principal{
+    width: 80%;
+}
+
+
+/* SECTION 2 */
+
+
+.section2{
+    display: flex;
+    box-shadow: 1px 1px 6px #0000004f;
+    border-radius: 10px;
+    align-items: center;    
+}
+
+.img-principal2{
+    padding-top: 20px;
+    width: 30%;
+}
+
+
+.container-parrafo{
+   text-align: start;
+   line-height: 3rem ;
+
+    
+   
+
+}
+
+
+.footer{
+    padding-top: 20px;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+
+.footer p{
+    color: white;
+}
+
+.logo-white{
+    filter: brightness(0) invert(1);
+}
+
+.footer div{
+    display: grid;
+    grid-template-columns: 2fr ;
+}

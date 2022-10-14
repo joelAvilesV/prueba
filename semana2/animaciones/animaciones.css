@@ -1,0 +1,125 @@
+body{
+    background-color: blueviolet;
+}
+
+.texto-animado{
+    animation-name:  texto-volador;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    width: 800px;
+    
+}
+@keyframes texto-volador{
+    from{
+        margin-left: 100%;
+        width: 350px;
+        background-color: grey;
+        border: none;
+
+        }
+    to{
+        margin-left: -100%;
+        background-color: rosybrown;
+        color: white;
+      }
+}
+
+.image-animada{
+    animation-name: image-resize ;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+
+}
+@keyframes image-resize{
+    from{
+        width: 200px;
+        height: 100px;
+        }
+    to{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    animation-name: box-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes box-animation{
+    0%{
+        background-color: black;
+      }
+    25%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: beige;
+    }
+}
+
+.ball-1{
+    margin-top: 150px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    animation-name: ball-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball-animation{
+    from{
+        transform: translateY(-100px)
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.lineas{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    font-size: 44px;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+
+.texto-animado-dos{
+    animation: texto-animado-dos 5s steps(144) 1s normal both,
+    cursor 0.5s steps(50) infinite normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes texto-animado-dos{
+    from{
+        width: 0;
+    }
+    to{
+        width: 600px;
+    }
+}
+
+@keyframes cursor {
+    from{
+        border-right-color: red;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+
