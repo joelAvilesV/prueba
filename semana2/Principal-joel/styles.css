@@ -46,7 +46,7 @@ nav ul li a {
 
 .container-plus{
    margin-bottom: 20px;
-   margin-left: 300px;
+   margin-left: 330px;
 }
 
 .button-plus{
@@ -62,6 +62,7 @@ nav ul li a {
     transition: ease-in 1s;
     margin-left: 200px;
     text-align: center;
+    margin-bottom: 30px;
 
 }
 

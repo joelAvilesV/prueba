@@ -137,6 +137,7 @@ ul:nth-child(1) {
     color: white;
     border-radius: 20px;
     transition: background-color 1s ;
+    cursor: pointer;
 }
 
 
@@ -164,6 +165,20 @@ ul:nth-child(1) {
     border:1px solid black;
 }
 
+.btn-des button:active{
+    transform: translateY(3px);
+}
+
+.img-iconos img:active{
+    transform: translateY(1px);
+}
+.icons img:active{
+    transform: translateY(1px);
+}
+
+.nav ul:active{
+    transform: translateY(1px);
+}
 
 .icon-row {
     display: flex;
