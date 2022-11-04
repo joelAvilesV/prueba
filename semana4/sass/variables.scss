@@ -1,17 +1,16 @@
 // VARIABLES SCSS --> EN SASS PODEMOS USAR VARIABLES PARA USAR COLORES FUENTES ETC
 // LA FORMA EN QUE CREAMOS VARIABLES ES DIFERENTE --> $NOMBREVARIABLE : VALOR
-$color-principal:rgb(109,219,174);
-$color-red:red;
+$color-principal: rgb(109,214,174);
+$color-red: #f01;
 $padding-1:10px;
-$b:2px solid;
-$fz:50px;
+$bg:green;
 
 
-@mixin alertita($color-text:#fff , $bg:green) {
+
+@mixin alertita ($bg:blue,$color-text:#fff) {
     background-color: $bg;
-    padding: $padding-1;
+    padding:$padding-1;
     border-radius: $padding-1;
     color: $color-text;
     margin-bottom: $padding-1;
-    
 }

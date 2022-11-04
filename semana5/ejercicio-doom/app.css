@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.container{
+display: flex;
+flex-direction: column;
+height: 100vh;
+width: 100%;
+justify-content: center;
+align-items: center;
+gap: 20px;
+color: #000;
+background-color: #fff;
+}
+
+
+.darkContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    background-color: #000;
+    }
+
+
+    .switch{
+        position: absolute;
+        height: 40px;
+        right: 25px;
+        width: 100px;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: rgb(56, 56, 56);
+        top: 25px;
+
+    }
+
+    
+    .darkButton{
+        position: absolute;
+        height: 40px;
+        right: 25px;
+        width: 100px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: solid;
+        background-color: rgb(#fff);
+        top: 25px;
+
+    }
+
+
+    .circle{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        transform: translateX(7px);
+        transition: .5s;
+    }
+
+
+    .darkCircle{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #000;
+        transform: translateX(65px);
+        transition: .5s;
+    }
+
+    h1{
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+
+    .btn-1{
+        height: 40px;
+        width: 100px;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: coral;
+        font-weight: bold;
+    }
+
+ 

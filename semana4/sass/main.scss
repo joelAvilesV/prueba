@@ -18,19 +18,82 @@ body{
 // puede almacenar un codigo y puede reutilizarlo 
 // podemos pasarle una variable
 
+
+
+
 .success{
-    //en vez de usar estilos comunes, llamamos al mixin
-    @include alertita;
+    // en vez de usar estilos comunes, llamamos al mixin 
+@include alertita;
+
 }
 
-
-.info{
-    font-size: 50px;
+ .info{
+ font-size: 50px;
    @include alertita($bg:#000,$color-text:red);
    
     
 }
+ .cuadrado{ border: $b;
+ }
 
-.cuadrado{
-    border: $b;
-}
+// --------------------------------------------------------------------------------------
+//  https://i.postimg.cc/wjCmT44m/laptop.jpg
+// https://i.postimg.cc/L6sfy1Zn/email.png
+// https://i.postimg.cc/WzG9XJD9/telefono.jpg
+
+
+// @mixin generate-icons($name,$icon,$color,$size){
+//     .div-icon-#($name){
+//         background:url("https://i.postimg.cc/wjCmT44m/laptop.jpg");
+//     }
+// }
+
+
+// @include
+
+// generate-icons("phone", "telefono.jpg", rgb(252,135,143),400px)
+
+
+body {
+    background-color: rgb(109, 214, 174);
+  }
+  
+  .success {
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .div-icon-phone {
+    background: url("./img/telefono.jpg");
+    border: solid 2px rgb(252, 135, 143);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .div-icon-mail {
+    background: url("./img/email.png");
+    border: solid 2px rgb(252, 135, 143);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .div-icon-laptop {
+    background: url("./img/laptop.jpg");
+    border: solid 2px rgb(252, 135, 143);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }/*# sourceMappingURL=main.css.map */
